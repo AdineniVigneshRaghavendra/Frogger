@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dghd7rii024ea"]
 
 [ext_resource type="Texture2D" uid="uid://cg011pqit8rfk" path="res://assets/FroggerIdle.png" id="1_3vyb7"]
-[ext_resource type="Script" uid="uid://dqlly6fnkthsm" path="res://scenes/scripts/player.gd" id="1_g2els"]
+[ext_resource type="Script" uid="uid://dqlly6fnkthsm" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://b6bgb2oalbgse" path="res://assets/FroggerLeap.png" id="3_qhqgy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3vyb7"]

@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bjmylrthev4gi" path="res://assets/Car4.png" id="7_tipki"]
 [ext_resource type="Texture2D" uid="uid://fwv4seydp6fb" path="res://assets/Car5.png" id="8_85g3d"]
 [ext_resource type="PackedScene" uid="uid://bnxd2t8ho2vxy" path="res://scenes/water_lane.tscn" id="10_choun"]
+[ext_resource type="PackedScene" uid="uid://cwhrykap1bri2" path="res://scenes/turtle_lane.tscn" id="11_ya4ey"]
 
 [node name="main" type="Node" unique_id=1263161037]
 
@@ -72,7 +73,33 @@ movement_x_limit = -480
 [node name="WaterLanes" type="Node" parent="." unique_id=1554821690]
 
 [node name="WaterLane" parent="WaterLanes" unique_id=1510663385 instance=ExtResource("10_choun")]
-position = Vector2(0, -30)
+position = Vector2(0, -62)
 logs_length = [2, 4, 6]
 distance_between_logs = 300
 speed = 250
+
+[node name="WaterLane2" parent="WaterLanes" unique_id=895016488 instance=ExtResource("10_choun")]
+position = Vector2(0, -126)
+logs_length = [5, 3]
+movement_x_limit = -720
+movement_direction = -1
+
+[node name="WaterLane3" parent="WaterLanes" unique_id=1964973568 instance=ExtResource("10_choun")]
+position = Vector2(0, -190)
+
+[node name="TurtleLane" parent="WaterLanes" unique_id=1842182307 instance=ExtResource("11_ya4ey")]
+position = Vector2(0, -254)
+
+[node name="WaterLane4" parent="WaterLanes" unique_id=892733340 instance=ExtResource("10_choun")]
+position = Vector2(0, -318)
+logs_length = [4, 3, 4]
+distance_between_logs = 100
+speed = 150
+
+[node name="TurtleLane2" parent="WaterLanes" unique_id=2124704500 instance=ExtResource("11_ya4ey")]
+position = Vector2(0, -350)
+distance_between_sections = 80
+speed = 175
+turtle_sections_lengths = [3, 2, 2]
+movement_x_limit = -480
+movement_direction = -1

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bnxd2t8ho2vxy"]
 
-[ext_resource type="Script" uid="uid://c4m5ohwatxmia" path="res://scenes/scripts/water_lane.gd" id="1_pmsin"]
+[ext_resource type="Script" uid="uid://c4m5ohwatxmia" path="res://scripts/water_lane.gd" id="1_pmsin"]
 
 [node name="WaterLane" type="Node2D" unique_id=1510663385]
 script = ExtResource("1_pmsin")

@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://cwhrykap1bri2"]
 
+[ext_resource type="Script" uid="uid://byxx0y77yv7ln" path="res://scripts/turtle_lane.gd" id="1_jwcw3"]
+
 [node name="TurtleLane" type="Node2D" unique_id=1842182307]
+script = ExtResource("1_jwcw3")
