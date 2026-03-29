@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dghd7rii024ea"]
+
+[ext_resource type="Texture2D" uid="uid://cg011pqit8rfk" path="res://assets/FroggerIdle.png" id="1_3vyb7"]
+[ext_resource type="Script" uid="uid://dqlly6fnkthsm" path="res://scenes/scripts/player.gd" id="1_g2els"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3vyb7"]
+size = Vector2(12, 9)
+
+[node name="Player" type="Area2D" unique_id=1390190200]
+script = ExtResource("1_g2els")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1245983242]
+texture_filter = 1
+texture = ExtResource("1_3vyb7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1105470851]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_3vyb7")
