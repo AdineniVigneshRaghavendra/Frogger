@@ -4,6 +4,10 @@
 [ext_resource type="PackedScene" uid="uid://dghd7rii024ea" path="res://scenes/player.tscn" id="2_sugp2"]
 [ext_resource type="PackedScene" uid="uid://3sbggw7ffy77" path="res://scenes/highway_lanes.tscn" id="3_sugp2"]
 [ext_resource type="Texture2D" uid="uid://dkn60s177tkov" path="res://assets/Car1.png" id="4_jyhfs"]
+[ext_resource type="Texture2D" uid="uid://bt2qg5sat24m5" path="res://assets/Car2.png" id="5_tbgi4"]
+[ext_resource type="Texture2D" uid="uid://b1ojjehexcr00" path="res://assets/Car3.png" id="6_tefeu"]
+[ext_resource type="Texture2D" uid="uid://bjmylrthev4gi" path="res://assets/Car4.png" id="7_tipki"]
+[ext_resource type="Texture2D" uid="uid://fwv4seydp6fb" path="res://assets/Car5.png" id="8_85g3d"]
 
 [node name="main" type="Node" unique_id=1263161037]
 
@@ -27,3 +31,36 @@ position = Vector2(0, 364)
 direction = -1
 vehicle_texture = ExtResource("4_jyhfs")
 movement_x_limit = -480
+
+[node name="HighwayLanes2" parent="HighwayLanes" unique_id=2051759316 instance=ExtResource("3_sugp2")]
+position = Vector2(0, 300)
+vehicle_texture = ExtResource("5_tbgi4")
+vehicle_count = 4
+distance_between_vehicles = 150
+speed = 250
+
+[node name="HighwayLanes3" parent="HighwayLanes" unique_id=1250270752 instance=ExtResource("3_sugp2")]
+position = Vector2(0, 236)
+direction = -1
+vehicle_texture = ExtResource("6_tefeu")
+vehicle_count = 2
+distance_between_vehicles = 300
+movement_x_limit = -480
+
+[node name="HighwayLanes4" parent="HighwayLanes" unique_id=1475859351 instance=ExtResource("3_sugp2")]
+position = Vector2(0, 172)
+vehicle_texture = ExtResource("7_tipki")
+vehicle_count = 4
+distance_between_vehicles = 300
+movement_x_limit = 600
+
+[node name="HighwayLanes5" parent="HighwayLanes" unique_id=408482240 instance=ExtResource("3_sugp2")]
+position = Vector2(0, 108)
+direction = -1
+vehicle_texture = ExtResource("8_85g3d")
+vehicle_count = 2
+distance_between_vehicles = 230
+speed = 160
+movement_x_limit = -480
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1497267902]
