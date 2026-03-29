@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://ck5ox7vqdk8gj"]
+
+[ext_resource type="Script" uid="uid://iownobcqkgv5" path="res://scenes/scripts/turtle_section.gd" id="1_vid3v"]
+
+[node name="TurtleSection" type="Node2D" unique_id=179976374]
+script = ExtResource("1_vid3v")

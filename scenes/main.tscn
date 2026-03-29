@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://b1ojjehexcr00" path="res://assets/Car3.png" id="6_tefeu"]
 [ext_resource type="Texture2D" uid="uid://bjmylrthev4gi" path="res://assets/Car4.png" id="7_tipki"]
 [ext_resource type="Texture2D" uid="uid://fwv4seydp6fb" path="res://assets/Car5.png" id="8_85g3d"]
+[ext_resource type="PackedScene" uid="uid://bnxd2t8ho2vxy" path="res://scenes/water_lane.tscn" id="10_choun"]
 
 [node name="main" type="Node" unique_id=1263161037]
 
@@ -69,3 +70,9 @@ speed = 160
 movement_x_limit = -480
 
 [node name="WaterLanes" type="Node" parent="." unique_id=1554821690]
+
+[node name="WaterLane" parent="WaterLanes" unique_id=1510663385 instance=ExtResource("10_choun")]
+position = Vector2(0, -30)
+logs_length = [2, 4, 6]
+distance_between_logs = 300
+speed = 250
