@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://3sbggw7ffy77"]
+
+[ext_resource type="Script" uid="uid://8ed2bdw678no" path="res://scenes/scripts/highway_lanes.gd" id="1_mbmxe"]
+
+[node name="HighwayLanes" type="Node2D" unique_id=451879855]
+script = ExtResource("1_mbmxe")
