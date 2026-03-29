@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://ccayvft4x600k"]
+
+[ext_resource type="Script" uid="uid://dqxyj5gir065j" path="res://scenes/log.gd" id="1_spugk"]
+
+[node name="Log" type="Node2D" unique_id=172177635]
+script = ExtResource("1_spugk")

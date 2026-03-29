@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://0p2bidyr0t2d"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gti1v"]
+load_path = "res://.godot/imported/LogEnd.png-8ae62e283460a8ef0cda7c1945dfa0b4.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bfl88"]
+size = Vector2(13, 10)
+
+[node name="LogStart" type="Area2D" unique_id=166577403]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=645789174]
+texture_filter = 1
+texture = SubResource("CompressedTexture2D_gti1v")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=407814255]
+position = Vector2(1.5, 0)
+shape = SubResource("RectangleShape2D_bfl88")

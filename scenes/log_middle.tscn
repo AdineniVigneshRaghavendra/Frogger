@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dyg050au6o3hl"]
+
+[ext_resource type="Texture2D" uid="uid://cf8od3twergli" path="res://assets/LogMiddle.png" id="1_awpfg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tm20r"]
+size = Vector2(16, 10)
+
+[node name="LogMiddle" type="Area2D" unique_id=1483526026]
+texture_filter = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1437501685]
+texture_filter = 1
+texture = ExtResource("1_awpfg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1268060911]
+shape = SubResource("RectangleShape2D_tm20r")
