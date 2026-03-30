@@ -57,3 +57,7 @@ shape = SubResource("RectangleShape2D_3vyb7")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1726767181]
 libraries/ = SubResource("AnimationLibrary_tuyoq")
+
+[node name="DeathTimer" type="Timer" parent="." unique_id=45819978]
+wait_time = 2.0
+one_shot = true

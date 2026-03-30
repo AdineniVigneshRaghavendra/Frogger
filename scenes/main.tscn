@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dotuytn8r4dbx" path="res://scenes/Water.tscn" id="1_85g3d"]
 [ext_resource type="PackedScene" uid="uid://dghd7rii024ea" path="res://scenes/player.tscn" id="2_sugp2"]
 [ext_resource type="PackedScene" uid="uid://3sbggw7ffy77" path="res://scenes/highway_lanes.tscn" id="3_sugp2"]
+[ext_resource type="Script" uid="uid://dfxs1xhydknfc" path="res://scripts/highway_lanes.gd" id="4_eb6dy"]
 [ext_resource type="Texture2D" uid="uid://dkn60s177tkov" path="res://assets/Car1.png" id="4_jyhfs"]
 [ext_resource type="Texture2D" uid="uid://bt2qg5sat24m5" path="res://assets/Car2.png" id="5_tbgi4"]
 [ext_resource type="Texture2D" uid="uid://b1ojjehexcr00" path="res://assets/Car3.png" id="6_tefeu"]
@@ -11,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://fwv4seydp6fb" path="res://assets/Car5.png" id="8_85g3d"]
 [ext_resource type="PackedScene" uid="uid://bnxd2t8ho2vxy" path="res://scenes/water_lane.tscn" id="10_choun"]
 [ext_resource type="PackedScene" uid="uid://cwhrykap1bri2" path="res://scenes/turtle_lane.tscn" id="11_ya4ey"]
+[ext_resource type="Script" uid="uid://il4bcucipyjj" path="res://scripts/game_state_manager.gd" id="13_trceg"]
 
 [node name="main" type="Node" unique_id=1263161037]
 
@@ -32,6 +34,7 @@ scale = Vector2(4, 4)
 camera = NodePath("../Camera2D")
 
 [node name="HighwayLanes" type="Node" parent="." unique_id=2060078342]
+script = ExtResource("4_eb6dy")
 
 [node name="HighwayLanes" parent="HighwayLanes" unique_id=451879855 instance=ExtResource("3_sugp2")]
 position = Vector2(0, 364)
@@ -73,25 +76,25 @@ movement_x_limit = -480
 [node name="WaterLanes" type="Node" parent="." unique_id=1554821690]
 
 [node name="WaterLane" parent="WaterLanes" unique_id=1510663385 instance=ExtResource("10_choun")]
-position = Vector2(0, -62)
+position = Vector2(0, -30)
 logs_length = [2, 4, 6]
 distance_between_logs = 300
 speed = 250
 
 [node name="WaterLane2" parent="WaterLanes" unique_id=895016488 instance=ExtResource("10_choun")]
-position = Vector2(0, -126)
+position = Vector2(0, -94)
 logs_length = [5, 3]
 movement_x_limit = -720
 movement_direction = -1
 
 [node name="WaterLane3" parent="WaterLanes" unique_id=1964973568 instance=ExtResource("10_choun")]
-position = Vector2(0, -190)
+position = Vector2(0, -158)
 
 [node name="TurtleLane" parent="WaterLanes" unique_id=1842182307 instance=ExtResource("11_ya4ey")]
-position = Vector2(0, -254)
+position = Vector2(0, -222)
 
 [node name="WaterLane4" parent="WaterLanes" unique_id=892733340 instance=ExtResource("10_choun")]
-position = Vector2(0, -318)
+position = Vector2(0, -286)
 logs_length = [4, 3, 4]
 distance_between_logs = 100
 speed = 150
@@ -103,3 +106,6 @@ speed = 175
 turtle_sections_lengths = [3, 2, 2]
 movement_x_limit = -480
 movement_direction = -1
+
+[node name="GameStateManager" type="Node" parent="." unique_id=474116763]
+script = ExtResource("13_trceg")
