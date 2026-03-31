@@ -95,7 +95,7 @@ func on_death_timer_timeout():
 
 func reset_player():
 	set_process_input(true)
-	collision_shape_2d.disabled = false
+	collision_shape_2d.set_deferred("disabled", false)
 	sprite_2d.texture = idle_texture
 	global_position = PLAYER_START_POSITION
 	new_position = PLAYER_START_POSITION

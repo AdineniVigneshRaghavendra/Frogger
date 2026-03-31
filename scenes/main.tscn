@@ -13,6 +13,8 @@
 [ext_resource type="PackedScene" uid="uid://bnxd2t8ho2vxy" path="res://scenes/water_lane.tscn" id="10_choun"]
 [ext_resource type="PackedScene" uid="uid://cwhrykap1bri2" path="res://scenes/turtle_lane.tscn" id="11_ya4ey"]
 [ext_resource type="Script" uid="uid://il4bcucipyjj" path="res://scripts/game_state_manager.gd" id="13_trceg"]
+[ext_resource type="PackedScene" uid="uid://ewisoexy5l4y" path="res://scenes/home_slot.tscn" id="14_a8y0u"]
+[ext_resource type="Script" uid="uid://cm13kmqgw5t80" path="res://scripts/home_slots.gd" id="14_jkv2x"]
 
 [node name="main" type="Node" unique_id=1263161037]
 
@@ -29,6 +31,7 @@ position = Vector2(0, 34)
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1500976323]
 
 [node name="Player" parent="." unique_id=1390190200 node_paths=PackedStringArray("camera") instance=ExtResource("2_sugp2")]
+z_index = 1
 position = Vector2(0, 418)
 scale = Vector2(4, 4)
 camera = NodePath("../Camera2D")
@@ -109,3 +112,26 @@ movement_direction = -1
 
 [node name="GameStateManager" type="Node" parent="." unique_id=474116763]
 script = ExtResource("13_trceg")
+
+[node name="HomeSlots" type="Node" parent="." unique_id=290296792]
+script = ExtResource("14_jkv2x")
+
+[node name="HomeSlot" parent="HomeSlots" unique_id=2091331388 instance=ExtResource("14_a8y0u")]
+position = Vector2(-320, -412)
+scale = Vector2(4, 4)
+
+[node name="HomeSlot2" parent="HomeSlots" unique_id=1504695386 instance=ExtResource("14_a8y0u")]
+position = Vector2(-128, -412)
+scale = Vector2(4, 4)
+
+[node name="HomeSlot3" parent="HomeSlots" unique_id=889671328 instance=ExtResource("14_a8y0u")]
+position = Vector2(128, -412)
+scale = Vector2(4, 4)
+
+[node name="HomeSlot4" parent="HomeSlots" unique_id=1329136160 instance=ExtResource("14_a8y0u")]
+position = Vector2(320, -412)
+scale = Vector2(4, 4)
+
+[node name="HomeSlot5" parent="HomeSlots" unique_id=759643813 instance=ExtResource("14_a8y0u")]
+position = Vector2(0, -400)
+scale = Vector2(3, 3)
